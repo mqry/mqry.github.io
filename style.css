@@ -1,7 +1,7 @@
 *{
     padding: 0;
     margin: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Poppins','Open Sans', 'verdana-bold' , 'Nunito Sans'sans-serif;
     box-sizing: border-box;
 }
 .hero{
@@ -15,29 +15,48 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-top: 45px;
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-top: 0;
+    background: rgba(0, 0 ,0, 0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50;
+    padding: 10px 90px;
+    box-sizing: border-box;
+    border-bottom: 1px solid 4F51A2;
+    margin: 0;
+    font-family: 'verdana-bold';
+
 }
 .logo{
-    color: mediumpurple;
-    font-size: 25px;
+    color: mediumpurple ;
+    float: right;
+    font-size: 17px;
     letter-spacing: 1px;
     cursor: pointer;
-    margin-top: 0;
+    margin-top: 5;
+    margin-bottom: 0%;
+    font-family: 'verdana-bold';
+    left: 10;
 }
 nav ul li{
     list-style-type: none;
-    display: inline-block;
+    float: left;
+    display: flex;
     padding: 10px 30px;
+    margin-bottom: 0;
+    font-family: 'verdana-bold';
 }
 nav ul li a{
     color: white;
     text-decoration: none;
+    border-radius: 6px;
 
 }
 nav ul li a:hover{
     color:purple;
+    background: rgba(0,0,0,0,7);
     transition: .4s;
 }
 .content{
@@ -48,20 +67,25 @@ nav ul li a:hover{
 }
 h1{
     color: white;
-    margin: 20px 0px 20px;
+    margin-top: 0x;
+    margin-bottom: 10x;
     font-size: 60px;
 }
 span{
-    color:mediumpurple;
+    font-size: 55px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Nunito Sans'
 }
 h3{
-    color: ghostwhite;
-    font-size: 20px;
+    color: white;
+    font-size: 17x;
     margin-bottom: 50px;
+    font-family: 'open sans';
 }
 h4{
-    color: white;
-    font-size: 15px;
+    color: rgba(183, 183, 255);
+    font-size: 20px;
     letter-spacing: 2px;
 }
 .share{
@@ -91,6 +115,8 @@ h4{
     width: 100%;
     padding: 100px 0px;
     background-color: #232363;
+    background-size: cover;
+    background-position: center;
 }
 .about img{
     height: 400px;
@@ -124,7 +150,7 @@ h4{
     text-transform: capitalize;
 }
 .about-text p{
-    color: lightgrey;
+    color: white;
     letter-spacing: 1px;
     line-height: 28px;
     font-size: 18px;
@@ -134,6 +160,8 @@ h4{
     width: 100%;
     padding: 100px 0px;
     background-color: #4F51A2;
+    background-size: cover;
+    background-position: center;
 }
 .title h2{
     color: white;
@@ -193,105 +221,66 @@ h5{
     bottom: 35px;
     font-size: 14px;
     margin-top: 1%;
+    margin-bottom: 0;
     text-align: center;
 }
-
 /* discord.html */
+.logos{
+    color: mediumpurple ;
+    float: right;
+    font-size: 17px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    margin-top: 5;
+    margin-bottom: 0%;
+    font-family: 'verdana-bold';
+    left: 10;
+}
 .discord{
     height: 100vh;
     width: 100%;
-    background-image: url(../images/discord.jpg);
+    background-image: url(../images/background.jpg);
     background-size: cover;
     background-position: center;
-}
-.bots h2{
-    color: white;
-    font-size: 60px;
-    margin: 2px;
-    margin-top: 10x;;
-    text-align: center;
-
-}
-.dis{
-    color: mediumpurple;
-    font-size: 25px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-left: 0%;
 }
 .boxs{
     display: flex;
     justify-content: center;
     align-items: center;
-    
     min-height: 400px;
-    
+}
+.boxs img{
+    width: 400px;
+    clip-path: circle();
+    position: absolute;
+    margin-top: 20%;
+    margin-bottom: 25%;
 }
 .cards{
-    height: 365px;
-    width: 335px;
+    height: 200px;
+    width: 25%;
     padding: 20px 35px;
     background: white;
     border-radius: 20px;
-    margin: 15%;
-    margin-top: 5%;
-    margin-left: 15%;
+    margin-top: 45%;
     position: relative;
     overflow: hidden;
     text-align: center;
-}
-.cards i{
-    font-size: 50px;
-    display: block;
-    text-align: center;
-    margin-bottom: 4%;
-    color: orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .cards h5{
-    color: black;
-    margin-bottom: 4%;
+    color:orange
 }
 .buttons{
-    background-color: mediumpurple;
-    color:  white;
+    color:  mediumpurple;
     text-decoration: none;
     border: 2px soild transparent;
     font-weight: bold;
     padding: 9px 30px;
     border-radius: 30px;
     transition: .4s;
+    margin-top: 5px;
 }
-.praa p{
-    color:black;
-    margin-bottom: 25px;
-}
-
-/* skript */
-.sk{
-    color: mediumpurple;
-    font-size: 25px;
-    letter-spacing: 1px;
-    cursor: pointer;
-    margin-left: 0%;
-}
-.skript{
-    height: 100vh;
-    width: 100%;
-    background-image: url(../images/discord.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.sks h2{
-    color: white;
-    font-size: 50px;
-    margin: 2px;
-    margin-top: 10x;;
-    text-align: center;
-}
-.sks p{
-    color: white;
-    font-size: 16px;
-    margin: 2px;
-    margin-top: 10x;;
-    text-align: center;
+.end{
+    margin-top: 10px;
 }
